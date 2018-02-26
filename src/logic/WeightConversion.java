@@ -1,4 +1,4 @@
-package test3.logic;
+package logic;
 
 public class WeightConversion {
 
