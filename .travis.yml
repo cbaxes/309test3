@@ -5,7 +5,7 @@ addons:
   sonarcloud:
     organization: "cbaxes-github"
     token:
-      secure: "905d3b0cc538b6435b8b83be13cc324f95556a88"
+      secure: "8233aec2e475a7f252fd1f5f4f9127617eb16e49"
 jdk:
   - oraclejdk8
 script:
