@@ -1,7 +1,7 @@
 package test3.test;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import junit.framework.Assert.*;
+import junit.framework.Test;
 import test3.logic.WeightConversion;
 
 public class WeightConversionTest {
