@@ -1,4 +1,4 @@
-package logic;
+package TrasvisSQPractice.TrasvisSQPractice;
 
 public class WeightConversion {
 

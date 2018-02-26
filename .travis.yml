@@ -1,9 +1,17 @@
 language: java
-jdk:
-- oraclejdk8
+sudo: false
+install: true
 addons:
   sonarcloud:
-    organization: "cbaxes-github" # the key of the org you chose at step #3
+    organization: "cbaxes-github"
+    token:
+      secure: "f549657ceb6085e07a222446eb8a0619129c9e0c"
+jdk:
+  - oraclejdk8
 script:
-  - ant build
-  - sonar-scanner
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.sonar/cache'
+      
